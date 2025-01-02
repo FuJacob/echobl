@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.topic-title {
+  color: #0d66f9;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topics {
+}
+
+.topics a {
+  background-color: #0d66f9;
+  border: 0.1rem solid gray;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1.9rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topics a:hover {
+  background-color: white;
+  color: #0d66f9;
+}

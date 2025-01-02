@@ -1,0 +1,24 @@
+{% extends 'main.html' %} {% block content %}
+
+<style>
+	.home-container {
+		display: grid;
+		grid-template-columns: 1fr 3fr 1fr;
+	}
+	.topics li {
+		list-style-type: none;
+	}
+</style>
+<main class="home-container">
+	<section class="topics">
+		{% include 'base/components/topic.html' %}
+	</section>
+	<section>
+		{% include 'base/components/feed.html' %}
+	</section>
+
+	<section>
+		{% include 'base/components/activity.html' %}
+	</section>
+</main>
+{% endblock %}
