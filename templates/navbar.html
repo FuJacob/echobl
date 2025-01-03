@@ -22,7 +22,7 @@
         <!-- Logged In -->
 {% if request.user.is_authenticated %}
         <div class="header__user">
-          <a href="{% url 'logout' %}">
+          <a href="{% url 'update-user' %}">
             <div class="avatar avatar--medium active">
               <img src="https://randomuser.me/api/portraits/men/37.jpg" />
             </div>
