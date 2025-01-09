@@ -6,7 +6,8 @@
   <br>
 </h1>
 
-<h4 align="center">A social debate platform for people to voice their beliefs on controversial topics, and possibly exit their bubble.</h4>
+<h4 align="center">Tired of discussion boards becoming echo-chambers when discussing controversial topics? Well, EchoBl solves that.</h4>
+  <h4 align="center"> A social debate platform for people to voice their beliefs on controversial topics, and possibly exit their bubble.</h4>
 
 <p align="center">
   <a href="#key-features">What is it?</a> •
