@@ -28,6 +28,9 @@
 ## What is EchoBl?
 <div id="key-features" />
 
+EchoBl was created in response to the difficulty of having meaningful discussions on controversial topics with those holding opposing views. For instance, on platforms like Reddit, subreddits often reinforce a groupthink mentality due to the upvote system.
+
+**EchoBl changes that by giving users the power to create their own debate spaces, where they can engage in open discussions with people from all sides of the conversation.**
 * **Debate Bubbles**  
   - Users can create and join "bubbles" based on various controversial topics to share and challenge opinions in real-time.
 * **Topic Categories**  
