@@ -1,17 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
-  --color-main: #71c6dd;
-  --color-main-light: #e1f6fb;
-  --color-dark: #3f4156;
-  --color-dark-medium: #51546e;
-  --color-dark-light: #696d97;
-  --color-light: #e5e5e5;
+  --color-main: #c8ff00;
+  /* Vibrant red for primary elements */
+  --color-main-light: #ffb3a5;
+  /* Softer red for hover or accents */
+  --color-dark: #1a1a1a;
+  /* Deep black for primary backgrounds */
+  --color-dark-medium: #2d2d2d;
+  /* Medium-dark shade for containers */
+  --color-dark-light: #3f3f3f;
+  /* Lighter dark for contrast or borders */
+  --color-light: #f5f5f5;
+  /* Near-white for text and highlights */
   --color-gray: #8b8b8b;
-  --color-light-gray: #b2bdbd;
-  --color-bg: #2d2d39;
+  /* Neutral gray for secondary text */
+  --color-light-gray: #b2b2b2;
+  /* Light gray for subtle contrasts */
+  --color-bg: #121212;
+  /* True black for the overall background */
   --color-success: #5dd693;
-  --color-error: #fc4b0b;
+  /* Retained green for success */
+  --color-error: #b8fc0b;
+  /* Red for error, consistent with primary red */
 }
 
 /*========== base styles ==========*/
