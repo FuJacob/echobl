@@ -2,6 +2,13 @@
 
 {% block content %}
 <main class="auth layout">
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
 
   {% if page == 'login' %}
   <div class="container">
@@ -17,10 +24,10 @@
         <form class="form" action="" method="POST">
           {% csrf_token %}
           <div class="form__group form__group">
-            <label for="room_name">Email</label>
-            <input id="username" name="email" type="email" placeholder="e.g. dennis_ivy@email.com />
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="Enter your username" />
           </div>
-          <div class=" form__group">
+          <div class="form__group">
             <label for="password">Password</label>
             <input id="password" name="password" type="password"
               placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" />
@@ -36,7 +43,6 @@
                 d="M15 21.694v4.306h2v-4.306c0.587-0.348 1-0.961 1-1.694 0-1.105-0.895-2-2-2s-2 0.895-2 2c0 0.732 0.413 1.345 1 1.694z">
               </path>
             </svg>
-
             Login
           </button>
         </form>
@@ -62,13 +68,22 @@
         <form class="form" action="" method="POST">
           {% csrf_token %}
 
+          {% if form.errors %}
+          <div class="form-errors">
+            {% for field in form %}
+            {% for error in field.errors %}
+            <div class="alert alert-danger">{{ error }}</div>
+            {% endfor %}
+            {% endfor %}
+          </div>
+          {% endif %}
+
           {% for field in form %}
           <div class="form__group form__group">
-            <label for="room_name">{{field.label}}</label>
+            <label for="{{field.id_for_label}}">{{field.label}}</label>
             {{field}}
           </div>
           {% endfor %}
-
 
           <button class="btn btn--main" type="submit">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -80,14 +95,13 @@
                 d="M15 21.694v4.306h2v-4.306c0.587-0.348 1-0.961 1-1.694 0-1.105-0.895-2-2-2s-2 0.895-2 2c0 0.732 0.413 1.345 1 1.694z">
               </path>
             </svg>
-
             Register
           </button>
         </form>
 
         <div class="auth__action">
-          <p>Already signed up yet?</p>
-          <a href="{% url 'login' %}" class="btn btn--link">Sign Up</a>
+          <p>Already have an account?</p>
+          <a href="{% url 'login' %}" class="btn btn--link">Login</a>
         </div>
       </div>
     </div>
