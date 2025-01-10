@@ -117,6 +117,7 @@ def createRoom(request):
             name=request.POST.get('name'),
             description=request.POST.get('description')
         )
+        return render(request, 'base.home.html', context)
     context = {'form': form,
                'topics': topics}
     return render(request, 'base/room_form.html', context)

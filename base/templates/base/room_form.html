@@ -29,7 +29,7 @@
               <datalist id="topic-list">
                 {% for topic in topics %}
                 <select id="room-topic" name="" id="">
-                  <option value="Python">{{topic.name}}</option>
+                  <option value={{topic.name}}>{{topic.name}}</option>
                   {% endfor %}
                 </select>
               </datalist>
