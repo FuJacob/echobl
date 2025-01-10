@@ -22,7 +22,7 @@
 ## Try EchoBl now on <a href="https://echobl.onrender.com/" target="_blank"> https://echobl.onrender.com/</a>
 
 > **Note:**
-> EchoBl does not currently work hosted. Fixes will begin soon.
+> Please note it may take a while to load due to being hosted on Render's free plan.
 
 
 ## What is EchoBl?
